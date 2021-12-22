@@ -1,0 +1,56 @@
+{
+    "name": "delmonicoweb/twilio-sms",
+    "description": "A laravel package to send Twilio SMS messages",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "delmonicoweb",
+        "twilio",
+        "sms",
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "E J Del Monico",
+            "email": "ejdelmonico@gmail.com",
+            "homepage": "https://github.com/delmonicoweb/twilio-sms.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "illuminate/console": "^9.0",
+        "illuminate/support": "^9.0",
+        "twilio/sdk": "^6.32"
+    },
+    "require-dev": {
+        "orchestra/testbench": "dev-master",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Delmonicoweb\\TwilioSms\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Delmonicoweb\\TwilioSms\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Delmonicoweb\\TwilioSms\\TwilioSmsServiceProvider"
+            ],
+            "aliases": {
+                "TwilioSms": "Delmonicoweb\\TwilioSms\\Facades\\TwilioSms"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
