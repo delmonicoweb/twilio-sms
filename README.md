@@ -17,7 +17,7 @@ composer require delmonicoweb/twilio-sms
 ## Usage
 
 ```php
-// Usage description here
+A simple package to send a Twilio SMS from a Laravel application. Make sure to add your Twilio api access code to your .env file.
 ```
 
 ### Testing
